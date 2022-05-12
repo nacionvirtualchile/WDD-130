@@ -1,28 +1,46 @@
-body {
-    text-align: center;
-  }
 
   nav {
-    background-color: steelblue;
     padding: 10px;
+    text-align: center;
   }
 
   a {
     color: white;
     margin: 40px;
+    font-size: 1.5em;
   }
 
   h1 {
     color: steelblue;
+    text-align: center;
   }
   img {
     width: 80%;
     border: 4px solid steelblue;
+    display: block;
+    margin: 0 auto;
   }
-  p {
-    padding: 10px;
-  }
+
   footer {
+    text-align: center;
+  }
+
+  nav, footer {
     background-color: steelblue;
     color: white;
-  }
+}
+
+main p {
+  width: 80%;
+  margin: 50px auto;
+  text-align: center;
+}
+
+footer p {
+  font-size: 20px;
+  margin: 20px auto;
+}
+
+a:hover {
+  background-color: rgb(25, 59, 132);
+  color: rgb(176, 196, 212);}

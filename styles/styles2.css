@@ -1,0 +1,80 @@
+
+
+a:hover {
+  background-color: rgb(25, 59, 132);
+  color: rgb(176, 196, 212);}
+
+
+
+
+  body{
+    background-color: rgb(242, 137, 189);
+  }
+
+  h1 {
+    color: rgb(255, 255, 255);
+    text-align: center;
+    margin-top: 50px;
+  }
+
+  h1:hover {
+    color: rgb(0, 0, 0);
+    text-align: center;
+    margin-top: 50px;
+  }
+
+  main p {
+    width: 33%;
+    margin: 50px auto;
+    text-align: center;
+    color: white;
+
+  }
+
+  div {
+    display: block; 
+    margin: 0 auto;
+    width: 390px;
+    font-weight: bolder;
+    line-height: 29px;
+  }
+  
+  img {
+    width: 200px;
+    display: block;
+    margin: 0 auto;
+  }
+
+  footer p {
+    font-size: 15px;
+    color: black;
+    text-align: center;
+    font-weight: bolder;
+    line-height: 0px;
+  }
+
+  footer{
+    margin-bottom: 50px;
+  }
+
+  #quote {
+    font-size: 25px;
+    width: 210px;
+  }
+
+  #sign {
+    font-size: 17px;
+    width: 210px;
+    margin-top: 15px;
+    font-weight: bolder;
+    color: white;
+    text-align: center;
+  }
+
+  #first_words {
+    width: 445px;
+    margin-top: 35px;
+    color: white;
+    text-align: center;
+    font-weight: 100;
+  }
