@@ -61,6 +61,7 @@
 
 
 
+
     <main class="home_grid">
 
         <section class="main_1">
@@ -68,9 +69,84 @@
             <h3>You just need to choose one of these gorgeos layouts, then email us <br> and we could prepare your own website in just days</h3>
         </section>
 
-        <div class="img_central">
-            <img src="images/Websites1.jpg" alt="">
-        </div>
+
+
+            <!-- Container for the image gallery -->
+            <!-- Container for the image gallery -->
+            <!-- Container for the image gallery -->
+            <div class="img_central">
+                <div class="container">
+
+                    <!-- Full-width images with number text -->
+                    <div class="mySlides">
+                    <div class="numbertext">1 / 6</div>
+                        <img src="images/slide1.JPG" style="width:100%">
+                    </div>
+                
+                    <div class="mySlides">
+                    <div class="numbertext">2 / 6</div>
+                        <img src="images/slide2.JPG" style="width:100%">
+                    </div>
+                
+                    <div class="mySlides">
+                    <div class="numbertext">3 / 6</div>
+                        <img src="images/slide3.JPG" style="width:100%">
+                    </div>
+                
+                    <div class="mySlides">
+                    <div class="numbertext">4 / 6</div>
+                        <img src="images/slide4.JPG" style="width:100%">
+                    </div>
+                
+                    <div class="mySlides">
+                    <div class="numbertext">5 / 6</div>
+                        <img src="images/slide5.JPG" style="width:100%">
+                    </div>
+                
+                    <div class="mySlides">
+                    <div class="numbertext">6 / 6</div>
+                        <img src="images/slide6.JPG" style="width:100%">
+                    </div>
+                
+                    <!-- Next and previous buttons -->
+                    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                
+                    <!-- Image text -->
+                    <div class="caption-container">
+                    <p id="caption"></p>
+                    </div>
+                
+                    <!-- Thumbnail images -->
+                    <div class="row">
+                    <div class="column">
+                        <img class="demo cursor" src="images/slide1.JPG" style="width:100%" onclick="currentSlide(1)" alt="Yoga Layout">
+                    </div>
+                    <div class="column">
+                        <img class="demo cursor" src="images/slide2.JPG" style="width:100%" onclick="currentSlide(2)" alt="SEO Layout">
+                    </div>
+                    <div class="column">
+                        <img class="demo cursor" src="images/slide3.JPG" style="width:100%" onclick="currentSlide(3)" alt="Crypto Layout">
+                    </div>
+                    <div class="column">
+                        <img class="demo cursor" src="images/slide4.JPG" style="width:100%" onclick="currentSlide(4)" alt="School layout">
+                    </div>
+                    <div class="column">
+                        <img class="demo cursor" src="images/slide5.JPG" style="width:100%" onclick="currentSlide(5)" alt="Rental Layout">
+                    </div>
+                    <div class="column">
+                        <img class="demo cursor" src="images/slide6.JPG" style="width:100%" onclick="currentSlide(6)" alt="Digital Layout">
+                    </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- END Container for the image gallery -->
+            <!-- END Container for the image gallery -->
+            <!-- END Container for the image gallery -->
+
+
+
 
         <div id="steps_p"><p>
             Your own website in just 3 steps:
@@ -196,4 +272,44 @@
 
 
 </body>
+
+
+<script>
+
+let slideIndex = 1;
+showSlides(slideIndex);
+
+// Next/previous controls
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+// Thumbnail image controls
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("demo");
+  let captionText = document.getElementById("caption");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+  captionText.innerHTML = dots[slideIndex-1].alt;
+}
+
+
+</script>
+
+
+
 </html>
