@@ -767,3 +767,36 @@ footer a {
 /* END - WEB COMPONENT - SLIDER*/
 /* END - WEB COMPONENT - SLIDER*/
 /* END - WEB COMPONENT - SLIDER*/
+
+
+
+
+
+/* CONTACT FORM*/
+/* CONTACT FORM*/
+/* CONTACT FORM*/
+
+#body_contact {
+    background-color: #0077B6;
+}
+
+.contac_form {
+    position:fixed; 
+    top: 120px; 
+    left:0px; 
+    bottom:0px;
+    right:0px;
+    width: 80%; 
+    height:100%; 
+    border:none; 
+    margin:0 auto; 
+    padding:0; 
+    overflow:hidden; 
+    z-index:999999;
+}
+
+
+
+/* END - CONTACT FORM*/
+/* END - CONTACT FORM*/
+/* END - CONTACT FORM*/
