@@ -7,19 +7,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>VirtualNation - Websites</title>
 
+    <link rel="stylesheet" href="https://pyscript.net/alpha/pyscript.css" />
+    <script defer src="https://pyscript.net/alpha/pyscript.js"></script>
+
 </head>
 <body>
+    Hello world! <br>
+    This is the current date and time, as computed by Python:
+    <py-script>
+from datetime import datetime
+now = datetime.now()
+now.strftime("%m/%d/%Y, %H:%M:%S")
+    </py-script>
+
 
 
     <header>
         <nav>
-            <a href="index.html">Websites</a>
-            <a href="emails.html">Emails</a>
-            <a id="logo_link" href="index.html">
+            <a href="">Websites</a>
+            <a href="">Emails</a>
+            <a id="logo_link" href="">
                 <img class="logo" src="images/logo-small.png" alt="NationVirtual">
             </a>
-            <a href="ecommerces.html">Ecommerces</a>
-            <a href="contact.html">Contact</a>
+            <a href="">Ecommerces</a>
+            <a href="">Contact</a>
         </nav>
     </header>
 
