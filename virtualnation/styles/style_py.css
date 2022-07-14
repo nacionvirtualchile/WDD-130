@@ -1,0 +1,812 @@
+/* if you are using any Google fonts change the font names below to your fonts. 
+Any spaces in your font name should be replaced with a +. 
+Fonts are separated by a | */
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@700&family=Kdam+Thmor+Pro&family=Volkhov&display=swap');
+
+:root {
+  /* change the values below to your colors from your palette */
+  --primary-color: #03045E;
+  --secondary-color: #0077B6;
+  --accent1-color: #00B4D8;
+  --accent2-color: #CAF0F8;
+
+  /* change the values below to your chosen font(s) */
+  --heading-font: "Comfortaa", Volkhov;
+  --paragraph-font: Volkhov, "Kdam+Thmor+Pro", sans-serif;
+
+  /* these colors below should be chosen from among your palette colors above */
+  --headline-color-on-white: #03045E;  /* headlines on a white background */ 
+  --headline-color-on-color: #CAF0F8; /* headlines on a colored background */ 
+  --paragraph-color-on-white: #0077B6; /* paragraph text on a white background */ 
+  --paragraph-color-on-color: #CAF0F8; /* paragraph text on a colored background */ 
+  --paragraph-background-color: #0077B6  ;
+  --nav-link-color: #CAF0F8;
+  --nav-background-color: #00B4D8;
+  --nav-hover-link-color: white;
+  --nav-hover-background-color: #0077B6;
+}
+
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: var(--heading-font);
+    color: var(--headline-color-on-white);
+}
+
+p {
+    font-family: var(--paragraph-font);
+    color: var(--paragraph-color);
+}
+
+/* HEADER */
+/* HEADER */
+
+header{
+    background-color: var(--accent1-color);
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+    width: 400px;
+    padding: 5px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #fcfbfb;
+    padding: 15px;
+    margin: 0 auto;
+}    
+
+nav a:hover{
+    text-decoration:underline;
+    color: #000302;
+}  
+
+.logo {
+    width: 50px ;
+    margin: 0 auto;
+}
+
+
+/* END HEADER */
+/* END HEADER */
+/* END HEADER */
+
+
+
+
+/* GENERAL THINGS */
+/* GENERAL THINGS */
+
+img {
+    border-radius: 15px;
+}
+
+.button {
+    background-color: var(--primary-color); 
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    font-size: 18px;
+    padding: 15px 30px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.button_py {
+    background-color: var(--primary-color); 
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    font-size: 12px;
+    padding: 15px 15px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+body {
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+h1 {
+    font-size: 3.5em;
+    padding-top: 0px;
+    margin-top: 0px;
+    margin-bottom: 0;
+
+}
+
+h2 {
+    font-size: 2.5em;
+    padding-top: 0px;
+    margin-top: 10px;
+    color: rgb(0, 0, 0);
+    line-height: 10px;
+}
+
+
+#hero h2 {
+    font-size: 1.2em;
+    padding-top: 0px;
+    margin-top: 10px;
+    color: darkgray;
+    line-height: 10px;
+}
+
+
+.main_1 h2 {
+    line-height: 50px;
+}
+
+
+h3 {
+    font-size: 1.2em;
+    padding-top: 0px;
+    margin-top: 10px;
+    color: darkgray;
+    line-height: 20px;
+}
+
+#hero h3 {
+    font-size: 1.2em;
+    padding-top: 0px;
+    margin-top: 10px;
+    color: rgb(14, 14, 14);
+    line-height: 20px;
+}
+
+
+#steps_p {
+    font-weight: bold;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+
+
+/* END GENERAL THINGS */
+/* END GENERAL THINGS */
+/* END GENERAL THINGS */
+
+
+
+
+/* HERO */
+/* HERO */
+
+#hero {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    text-align: center;
+}
+
+#hero img {
+    width: 100%;
+}
+
+#title_hero {
+    grid-column: 1/8;
+    grid-row: 1/2;
+    justify-self: center;
+    padding: 50px;
+}
+
+#image_1 {
+    grid-column: 2/3;
+}
+
+#image_2 {
+    grid-column: 4/5;
+}
+
+#image_3 {
+    grid-column: 6/7;
+}
+
+.button_hero{
+    grid-column: 1/8;
+    padding: 50px;
+}
+
+
+/* END HERO */
+/* END HERO */
+/* END HERO */
+
+
+
+
+/* HERO - ECO */
+/* HERO - ECO */
+
+#hero_ec {
+    display: grid;
+    grid-template-columns: 0.5fr 2.5fr 1fr 2fr 1fr;
+}
+
+
+.icon_img_ec {
+    width: 20%;
+}
+
+
+#title_hero_ec {
+    grid-column: 2/4;
+    grid-row: 1/2;
+    justify-self: center;
+    padding: 30px;
+    margin-top: 50px;
+}
+
+.charact_1_ec {
+    grid-column: 2/3;
+    grid-row: 2/3;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+}
+
+.charact_1_ec img {
+    grid-column: 1/2;
+    grid-row: 1/2;
+    justify-self: right;
+    padding: 15px;
+}
+
+.charact_1_ec p {
+    grid-column: 2/3;
+    grid-row: 1/2;
+    justify-self: left;
+}
+
+
+.charact_2_ec {
+    grid-column: 2/3;
+    grid-row: 3/4;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+}
+
+.charact_2_ec img {
+    grid-column: 1/2;
+    grid-row: 1/2;
+    justify-self: right;
+    padding: 15px;
+}
+
+.charact_2_ec p {
+    grid-column: 2/3;
+    grid-row: 1/2;
+    justify-self: left;
+}
+
+.charact_3_ec {
+    grid-column: 2/3;
+    grid-row: 4/5;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+}
+
+.charact_3_ec img {
+    grid-column: 1/2;
+    grid-row: 1/2;
+    justify-self: right;
+    padding: 15px;
+}
+
+.charact_3_ec p {
+    grid-column: 2/3;
+    grid-row: 1/2;
+    justify-self: left;
+}
+
+.main_img_ec {
+    grid-column: 4/5;
+    grid-row: 1/5;
+}
+
+.main_img_ec h3, p {
+    text-align: center;
+    color:darkgray;
+}
+
+#image_hero_ec {
+    display: flex;
+    margin: 0 auto;
+    margin-top: 100px;
+    width: 75%;
+}
+
+
+#hero_ec_sub {
+    font-weight: bold;
+    color: black;
+    padding-top: 15px;
+}
+
+
+
+/* END HERO - ECO */
+/* END HERO - ECO */
+/* END HERO - ECO */
+
+
+
+
+
+
+
+/* HERO - EMAILS */
+/* HERO - EMAILS */
+
+#hero_email {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+}
+
+
+.icon_img_email {
+    width: 100%;
+}
+
+
+#title_hero_email {
+    grid-column: 3/5;
+    grid-row: 1/2;
+    justify-self: center;
+    padding: 30px;
+    margin-top: 50px;
+}
+
+.charact_1_email {
+    grid-column: 2/3;
+    grid-row: 4/5;
+
+}
+
+.charact_1_email img {
+    width: 50%;
+    display: block;
+    margin: 0 auto;
+
+}
+
+.charact_2_email {
+    grid-column: 3/4;
+    grid-row: 4/5;
+}
+
+.charact_2_email img {
+    width: 50%;
+    display: block;
+    margin: 0 auto;
+}
+
+
+
+.charact_3_email {
+    grid-column: 4/5;
+    grid-row: 4/5;
+}
+
+.charact_3_email img {
+    width: 50%;
+    display: block;
+    margin: 0 auto;
+}
+
+
+
+.main_img_email {
+    grid-column: 2/3;
+    grid-row: 1/3;
+}
+
+.main_img_email h3, p {
+    text-align: center;
+    color:darkgray;
+}
+
+#image_hero_email {
+    display: flex;
+    margin: 0 auto;
+    margin-top: 100px;
+    width: 75%;
+}
+
+#sub_emails {
+    grid-column: 1/6;
+    grid-row: 2/3;
+    text-align: center;
+    padding-top: 50px;
+
+}
+
+#sub_emails h2{
+    font-size: 1.5em;
+}
+
+.button_hero_email {
+    grid-column: 1/6;
+    grid-row: 3/4;
+    text-align: center;
+    padding: 50px;
+    padding-bottom: 50px;
+}
+
+
+
+
+/* END HERO - EMAILS */
+/* END HERO - EMAILS */
+/* END HERO - EMAILS */
+
+
+
+
+
+
+
+
+/* MAIN */
+/* MAIN */
+
+.home_grid {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr 1fr 1fr 1fr 1fr;
+    text-align: center;
+    border-top-style: solid;
+    border-color: var(--secondary-color);
+    margin-bottom: 50px;
+    margin-top: 50px;
+    padding: 50px;
+}
+
+.home_grid p {
+    text-align: left;
+    padding-left: 10px;
+    font-size: 1.2em;
+    color: darkgray;
+}
+
+.main_1 {
+    grid-column: 1/8;
+    grid-row: 1/2;
+    justify-self: center;
+}
+
+.img_central {
+    grid-column: 1/8;
+    grid-row: 2/3;
+    justify-self: center;
+    margin-top: 50px;
+    margin-bottom: 100px;
+}
+
+#steps_p {
+    grid-column: 2/3;
+    grid-row: 4/5;
+    align-self: start;
+}
+
+#steps_p p {
+    font-weight: bold;
+    color: black;
+    text-align: center;
+}
+
+.steps_1 {
+    grid-column: 2/3;
+    grid-row: 4/5;
+    align-self: end;
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
+}
+
+
+.steps_2 {
+    grid-column: 2/3;
+    grid-row: 5/6;
+    align-self: center;
+    display: grid;
+    grid-template-columns: 1fr 3fr
+}
+
+.steps_3 {
+    grid-column: 2/3;
+    grid-row: 6/7;
+    display: grid;
+    grid-template-columns: 1fr 3fr
+}
+
+
+.img_1 {
+    grid-column: 4/5;
+    grid-row: 4/5;
+}
+
+.img_2 {
+    grid-column: 5/6;
+    grid-row: 4/5;
+}
+
+.img_3 {
+    grid-column: 6/7;
+    grid-row: 4/5;
+}
+
+
+.img_4 {
+    grid-column: 4/5;
+    grid-row: 5/6;
+}
+
+.img_5 {
+    grid-column: 5/6;
+    grid-row: 5/6;
+}
+
+.img_6 {
+    grid-column: 6/7;
+    grid-row: 5/6;
+}
+
+.img_7 {
+    grid-column: 4/5;
+    grid-row: 6/7;
+}
+
+.img_8 {
+    grid-column: 5/6;
+    grid-row: 6/7;
+}
+
+.img_9 {
+    grid-column: 6/7;
+    grid-row: 6/7;
+}
+
+.button_main {
+    grid-column: 4/7;
+    grid-row: 7/8;
+    padding: 50px;
+}
+
+
+
+
+/* END MAIN */
+/* END MAIN */
+/* END MAIN */
+
+
+
+
+/* EXTRA SECTION */
+/* EXTRA SECTION */
+
+
+.more_details {
+    display: grid;
+    grid-template-columns: 1fr 3fr 3fr 1fr;
+    text-align: center;
+    border-top-style: solid;
+    border-bottom-style: solid;
+    border-color: var(--secondary-color);
+    margin-bottom: 50px;
+    margin-top: 50px;
+    padding: 50px;
+}
+
+.more_details p{
+    color: rgb(141, 140, 140);
+}
+
+.more_details h2 {
+    grid-column: 1/5;
+    grid-row: 1/2;
+}
+
+#details_p1 {
+    grid-column: 2/3;
+    grid-row: 2/3;
+}
+
+#details_p2 {
+    grid-column: 3/4;
+    grid-row: 2/3;
+}
+
+#details_p3 {
+    grid-column: 2/4;
+    grid-row: 3/4;
+}
+
+.button_details {
+    grid-column: 2/4;
+    grid-row: 4/5;
+    padding: 50px;
+}
+
+/* END EXTRA SECTION */
+/* END EXTRA SECTION */
+/* END EXTRA SECTION */
+
+
+
+/* FOOTER */
+/* FOOTER */
+
+footer h3 a:hover {
+    text-decoration:underline;
+}
+
+footer h3 {
+    color: aquamarine;
+}
+
+
+footer {
+    background-color: var(--accent1-color);
+    color: aquamarine;
+
+}
+
+footer {
+    padding: 25px 50px;
+    margin-top: 50px; 
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+footer a {
+    text-align: center;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+}   
+
+
+
+/* FOOTER END */
+/* FOOTER END */
+/* FOOTER END */
+
+
+
+
+/* WEB COMPONENT - SLIDER*/
+/* WEB COMPONENT - SLIDER*/
+/* WEB COMPONENT - SLIDER*/
+
+
+  
+  /* Position the image container (needed to position the left and right arrows) */
+  .container {
+    position: relative;
+    width: 60%;
+    margin: 0 auto;
+  }
+  
+  /* Hide the images by default */
+  .mySlides {
+    display: none;
+  }
+  
+  /* Add a pointer when hovering over the thumbnail images */
+  .cursor {
+    cursor: pointer;
+  }
+  
+  /* Next & previous buttons */
+  .prev,
+  .next {
+    cursor: pointer;
+    position: absolute;
+    top: 40%;
+    width: auto;
+    padding: 16px;
+    margin-top: -50px;
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    font-size: 20px;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    -webkit-user-select: none;
+    background-color: rgba(0, 0, 0, 0.404);
+  }
+  
+  /* Position the "next button" to the right */
+  .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+
+  .prev {
+    left: 0;
+    border-radius: 3px 0 0 3px;
+  }
+  
+  /* On hover, add a black background color with a little bit see-through */
+  .prev:hover,
+  .next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+  }
+  
+  /* Number text (1/3 etc) */
+  .numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+  }
+  
+  /* Container for image text */
+  .caption-container {
+    text-align: center;
+    background-color: #222;
+    padding: 2px 16px;
+    color: white;
+  }
+  
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /* Six columns side by side */
+  .column {
+    float: left;
+    width: 16.66%;
+  }
+  
+  /* Add a transparency effect for thumnbail images */
+  .demo {
+    opacity: 0.6;
+  }
+  
+  .active,
+  .demo:hover {
+    opacity: 1;
+  }
+
+
+
+/* END - WEB COMPONENT - SLIDER*/
+/* END - WEB COMPONENT - SLIDER*/
+/* END - WEB COMPONENT - SLIDER*/
+
+
+
+
+
+/* CONTACT FORM*/
+/* CONTACT FORM*/
+/* CONTACT FORM*/
+
+#body_contact {
+    background-color: #0077B6;
+}
+
+.contac_form {
+    position:fixed; 
+    top: 120px; 
+    left:0px; 
+    bottom:0px;
+    right:0px;
+    width: 80%; 
+    height:100%; 
+    border:none; 
+    margin:0 auto; 
+    padding:0; 
+    overflow:hidden; 
+    z-index:999999;
+}
+
+
+
+/* END - CONTACT FORM*/
+/* END - CONTACT FORM*/
+/* END - CONTACT FORM*/
